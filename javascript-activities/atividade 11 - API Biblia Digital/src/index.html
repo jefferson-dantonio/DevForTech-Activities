@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer type="text/javascript" src="./js/index.js"></script>
+
+    <title>Biblia Digital</title>
+</head>
+
+<body>
+    <div class="title">
+        <h2>Biblia Digital</h2>
+    </div>
+
+
+
+    <div class="search">
+        <label for="">Digite o salmo desejado</label>
+        <input id="get-psalm" type="text">
+        <input class="button" type="submit" onclick="searchPsalm()" value="Pesquisar">
+        <input class="button" type="submit" onclick="cleanSeach()" value="Limpar">
+    </div>
+
+
+    <div class="show-result">
+
+        <div class="col">
+            <label for="set-name">Nome</label>
+            <input id="set-name" type="text" disabled>
+        </div>
+        <div class="col">
+            <label for="set-authors">Autores</label>
+            <input id="set-authors" type="text" disabled>
+        </div>
+        <div class="col">
+            <label for="set-group">Grupo</label>
+            <input id="set-group" type="text" disabled>
+        </div>
+    </div>
+
+
+    <div class="title">
+        <h3>Versos</h3>
+    </div>
+
+
+    <div class="show-verses">
+        <ol id="get-ol"></ol>
+    </div>
+
+</body>
+
+</html>
