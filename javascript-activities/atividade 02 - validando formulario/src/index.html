@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer type="text/javascript" src="./javascript/index.js"></script>
+    <title>Atividade 02 - Formulário </title>
+</head>
+
+<body>
+
+    <div class="title">
+        <h2>Formulário</h2>
+    </div>
+    
+
+    <form  class= "form "name="register" method="get">
+        <label>Nome:</label>
+        <input type="text" name="name"><br><br>
+        <label>Senha:</label>
+        <input id="password" type="password" name="password"><br><br>
+        <label>Confirme sua senha:</label>
+        <input id="passwordCheck" type="password" name="passwordCheck">
+
+        <input class="button" type="submit" onclick="return isValid()" value="Enviar">
+    </form>
+
+
+    
+</body>
+
+</html>
