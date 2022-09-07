@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./javascript/index.js"></script>
+    <title>Consulta CEP</title>
+</head>
+
+<body>
+    <div class="title">
+        <h2>Sistema de Consulta de Cep</h2>
+    </div>
+
+
+    <div class="name">
+        <label for="txt-name">Nome do Cliente</label>
+        <input id="txt-name" type="text">
+    </div>
+
+    <div class="search">
+        <label for="txt-query">Entre com o Cep a ser Consultado</label>
+        <input id="txt-query" type="text">
+        <input class="button" type="submit" onClick="processFields()" value="Processar">
+        <input class="button" type="submit" onclick="clearFields()" value="Limpar">
+    </div>
+
+    <div class="show-result">
+        <div class="col">
+            <label for="text-address">Endereço</label>
+            <input id="txt-address" type="text">
+        </div>
+        <div class="col">
+            <label for="text-district">Bairro</label>
+            <input id="txt-district" type="text">
+        </div>
+
+        <div class="col">
+            <label for="txt-cep">Cep</label>
+            <input id="txt-cep" type="text">
+        </div>
+
+        <div class="col">
+            <label for="txt-state">Estado</label>
+            <input id="txt-state" type="text">
+        </div>
+        <div class="col">
+            <label for="txt-city">Cidade</label>
+            <input id="txt-city" type="text">
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
