@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script defer type="text/javascript" src="./javascript/index.js"></script>
+    <script defer type="text/javascript" src="./javascript/FileSaver.js"></script>
+
+    <title>Atividade 05 - Calculadora </title>
+</head>
+
+<body>
+
+    <div id="canvas">
+
+        <div id="display"></div>
+        <div id="historyCanvas">
+
+            <input id="historyInput" type="file" onchange="loadFile(this.files[0])">
+
+        </div>
+
+
+
+        <div id="keys">
+
+            <div id="numericKey">
+
+                <div id="line01">
+                    <button id="key7" onclick="insert(7)">7</button>
+                    <button id="key8" onclick="insert(8)">8</button>
+                    <button id="key9" onclick="insert(9)">9</button>
+                    <button id="division" onclick="insert(`/`)">/</button>
+                    <button id="backspace" onclick="backspace()"> &#129044;</button>
+                </div>
+
+
+                <div id="line02">
+                    <button id="key4" onclick="insert(4)">4</button>
+                    <button id="key5" onclick="insert(5)">5</button>
+                    <button id="key6" onclick="insert(6)">6</button>
+                    <button id="multiplication" onclick="insert(`*`)">*</button>
+                    <button id="clean" onclick="clean()">C</button>
+                </div>
+
+                <div id="line03">
+                    <button id="key1" onclick="insert(1)">1</button>
+                    <button id="key2" onclick="insert(2)">2</button>
+                    <button id="key3" onclick="insert(3)">3</button>
+                    <button id="subtraction" onclick="insert(`-`)">-</button>
+                    <button id="percent" onclick="insert(`%`)">%</button>
+                </div>
+
+
+                <div id="line04">
+                    <button id="key0" onclick="insert(0)">0</button>
+                    <button id="keyFloat" onclick="insert(`.`)">.</button>
+                    <button id="add" onclick="insert(`+`)">+</button>
+                    <button id="equal" onclick="insert(`=`)">=</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+</body>
+
+</html>
