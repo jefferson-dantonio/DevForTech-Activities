@@ -1,0 +1,61 @@
+h2 {
+    color: black;
+}
+
+#spoiler {
+    display: none;
+}
+
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction:row;
+   
+}
+
+.add{
+    margin-top: 23px;
+}
+
+
+input, label{
+    margin: 5px;
+}
+
+tr,td{
+    border: 1px solid;
+}
+
+td{
+
+    width: 150px;
+    
+}
+
+
+
+th{
+    width: 150px;
+    background-color: grey;
+    color:#FFF;
+}
+
+button{
+    width: 600px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    background-color:grey;
+    color: #FFF;
+}
+
+.botao{
+    border: none;
+    width:  50px;
+    height: 25px;
+}
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script defer type="text/javascript" src="./javascript/FileSaver.js"></script>
+    <script defer type="text/javascript" src="./javascript/index.js"></script>
+    <title>CRUD de Produtos</title>
+
+
+</head>
+
+<body>
+    <!--Adicionando registros na nossa página-->
+    <h2>Sistema de Cadastro de Produtos</h2>
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+
+
+        <div class="line1">
+            <div class="prod">
+                <label>Produto</label>
+                <input type="text" id="add-produto" placeholder="Digite o produto">
+            </div>
+            <div class="val">
+                <label>Valor Unitario</label>
+                <input type="text" id="add-valor" placeholder="Digite o valor do produto">
+            </div>
+        </div>
+
+        <div class="line2">
+            <div class="qtd">
+                <label>Quantidade</label>
+                <input type="text" id="add-quantidade" placeholder="Digite a quantidade">
+            </div>
+            <input class="add" type="submit" value="Adicionar">
+        </div>
+    </form>
+
+
+    <!--Área destinada para editar/modificar os registros -->
+    <div id="spoiler" role="aria-hidden">
+        <br>
+        <h3>Editar</h3>
+        <form action="javascript:void(0);" method="POST" id="saveEdit">
+            <div class="line1">
+                <label>Produto</label>
+                <input type="text" id="edit-produto">
+                <label>Valor Unitario</label>
+                <input type="text" id="edit-valor">
+            </div>
+
+            <div class="line2">
+                <label>Quantidade</label>
+                <input type="text" id="edit-quantidade">
+                <input class="add" type="submit" value="Editar" /><a onclick="CloseInput()"
+                    aria-label="Close">&#10006;</a>
+            </div>
+
+        </form>
+    </div>
+
+    <!--Contador de Registros-->
+    <p id="counter"></p>
+
+    <!--Criando uma área com a tabela para mostrar os registros armazenados-->
+    <table border="0">
+        <!--Criando uma linha na tabela-->
+        <tr>
+            <th>Produto</th>
+            <th>Valor unitario</th>
+            <th>quantidade</th>
+            <th>Valor Total</th>
+            <tbody id="countries">
+
+            </tbody>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <button onclick="app.salvarArquivo()">Salvar em Arquivo</button>
+
+
+</body>
+
+</html>
