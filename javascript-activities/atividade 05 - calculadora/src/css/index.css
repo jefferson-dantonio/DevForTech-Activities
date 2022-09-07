@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+}
+
+#canvas{
+    display: flex;
+    width:400px;
+    border: 1px solid;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color:#3377FF;
+    
+    
+}
+
+#display{
+    margin: 10px, 10px;
+    padding: 10px;
+    display: flex;
+    width:380px;
+    height: 100px;
+    border-radius: 10px;
+    background-color:#D7E3F9;;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 40px;
+}
+
+#historyCanvas{
+    width: 380px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#keys{
+    padding: auto;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 350px;
+    
+}
+
+
+#line01,#line02,#line03,#line04{
+    display: flex;
+    justify-content:flex;
+    flex-direction: row;
+}
+
+button{
+    border-radius: 20px;
+    width: 50px; 
+    height: 50px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+#key0{
+    width:120px;     
+}
+#history{
+    width:20px;
+    height:20px;
+}
