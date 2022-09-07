@@ -1,0 +1,11 @@
+{
+  "name": "node-activities",
+  "version": "1.0.0",
+  "description": "Atividades realizadas nas mentorias de node e express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jefferson D'Antonio Malaquias",
+  "license": "MIT"
+}
